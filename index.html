@@ -18009,7 +18009,7 @@
           <h2>Fale Conosco</h2>
           <ul class="lista-icone">
               <li>
-                  <a href="/Users/Familia/Desktop/index.html" target="_blank">
+                  <a href="/encomendas" target="_blank">
                       <img class="icones-link" data-savepage-currentsrc="monitor.png" data-savepage-src="./taxa2_files/monitor.png" src="data:image/png;base64,UklGRtoCAABXRUJQVlA4WAoAAAAcAAAAFwAAFwAAQUxQSFcAAAABT2CQbeTgGVwRDuFRPiIi9gcF08i2ndyhhaRzsHCHIr5GISkDSw3x1ktOPqL/E4DLfR60eh3MRx5sRhz8Mx5sBu12o2n3JA8oWEsVbQAYtGlWJTej1dUAVlA4ILYAAADwBQCdASoYABgAPk0ei0QioaEYBgAoBMS2AE6ZmiFn0Cmb4AG2A/VXpo/4BkgHSoBahBv4fl7TAAD+/3waj//0FtN/4hl8m14bG/T/81j7csf8FU/+YYnM7j+lMeKmf/0JTt7Ff/JVP5JB8De/HkTv66vfdL62e+4y5yMzqYzCvPAj/3FO0ToqHdtevQxaP5PjmyS3koAKQZOafrp5//CGadERn9HBJAn/t3qFkNR+Vq/gAAAAAEVYSUa6AAAARXhpZgAASUkqAAgAAAAGABIBAwABAAAAAQAAABoBBQABAAAAVgAAABsBBQABAAAAXgAAACgBAwABAAAAAgAAABMCAwABAAAAAQAAAGmHBAABAAAAZgAAAAAAAABIAAAAAQAAAEgAAAABAAAABgAAkAcABAAAADAyMTABkQcABAAAAAECAwAAoAcABAAAADAxMDABoAMAAQAAAP//AAACoAQAAQAAABgAAAADoAQAAQAAABgAAAAAAAAAWE1QINsAAAA8P3hwYWNrZXQgYmVnaW49IiIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJHbyBYTVAgU0RLIDEuMCI+PHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48L3JkZjpSREY+PC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9InciPz4A">
                       <span>Registro de Manifestações</span>
                   </a>
@@ -18099,7 +18099,72 @@
   </p>
   <div class="copyright">© Copyright 2024 Correios</div>
   <p></p>
+
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Seção de Encomendas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        #encomendas {
+            display: none; /* Inicialmente escondido */
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="showEncomendas()">Ir para Encomendas</button>
+
+    <div id="encomendas">
+        <h2>Seção de Encomendas</h2>
+        <p>Aqui estão as informações sobre suas encomendas.</p>
+        <!-- Adicione o conteúdo específico da página /encomendas aqui -->
+    </div>
+
+    <script>
+        function showEncomendas() {
+            // Exibe a seção de encomendas
+            document.getElementById('encomendas').style.display = 'block'; 
+        }
+
+        // Verifica a URL quando a página é carregada
+        window.onload = function() {
+            if (window.location.pathname === '/encomendas') {
+                showEncomendas();
+            }
+        };
+    </script>
+
+</body>
+</html>
+
   </footer>
-  
   
   </body></html>
